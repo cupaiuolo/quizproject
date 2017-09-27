@@ -9,12 +9,15 @@
 		<h1>{{ quiz.name }}</h1>
 	<p>{{ quiz.description }}</p>
 
-	<h1>Marina's friends!</h1>
+	<h1>Start</h1>
 	<br>
 	
 	<br>
 	<br>
 	<h2>Start here</h2>
+	<p><a href="{% url 'question_page' quiz_number 1 %}">
+    Starta
+</a></p>
 		</body>
 	</head>
 	</html>
