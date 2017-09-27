@@ -1,0 +1,35 @@
+body {
+    background: url(marina.jpg) rgb(001, 001, 001);
+    background-size: 100% 100%;
+    color: white;
+   margin: auto;
+}
+
+
+h1 {
+    color: white;
+    text-align: center;
+
+}
+
+p {
+    font-family: helvetica;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+	
+}
+.row {
+ text-align: center;	
+ margin: auto;
+}
+.marina {
+}
+.bottomline {
+border-bottom: 1px solid rgb(256, 99, 99);	
+margin-bottom: 1cm;
+margin-top: 1cm;
+}
+.newpic {
+margin: auto;
+}
