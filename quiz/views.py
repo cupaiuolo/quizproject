@@ -1,5 +1,6 @@
 from quiz.models import Quiz 
 from django.shortcuts import render
+from django.shortcuts import redirect
 
 
 def startpage(request):
