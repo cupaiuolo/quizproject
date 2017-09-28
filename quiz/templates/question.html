@@ -17,10 +17,9 @@
 	<h2> Question 1
 	<br>
 	<br>
-		<form action="{% url "answer_page" quiz.quiz_number question_number %}" method="post">
+		<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 	{% csrf_token %}
 						<input type="radio" name="answer" value="1" checked> {{answer1}} 
-						Exempel 1
 						<br>
 						<input type="radio" name="answer" value="2"> {{answer2}} 
 						<br>

@@ -26,6 +26,7 @@ def question(request, quiz_number, question_number):
 		"answer1": question.answer1,
 		"answer2": question.answer2,
 		"answer3": question.answer3,
+		"quiz": quiz,
 		"quiz_number": quiz_number,
 		}
 	return render(request, "question.html", context)
@@ -43,5 +44,11 @@ def answer(request, quiz_number, question_number):
 	saved_answers = request.session.get(str(quiz_number), {})
 	saved_answers[question_number] = int(answer)
 	request.session[quiz_number] = saved_answers
-	return redirect("question_page", quiz_number, question_number + 1)	
+
+	quiz = Quiz.objects.get(quiz_number=quiz=number)
+	num_questions = quiz.questions.count()
+	if num_questions <=question_number:
+		return redirect("completed_page", quiz_number)
+	else: 
+		return redirect("question_page", quiz_number, question_number + 1)	
 # Create your views here.
