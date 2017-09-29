@@ -1,5 +1,8 @@
 body {
     background: url('/static/Marina.JPG') rgb(001, 001, 001);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center; 
     background-size: 100% 100%;
     color: white;
    margin: auto;
