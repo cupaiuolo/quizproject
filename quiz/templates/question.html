@@ -8,13 +8,8 @@
 <head>
 	<body>
 
-		<h1>{{ question_number }}. {{ question }}</h1>
-	<p>{{ answer1 }}</p>
-	<p>{{ answer2 }}</p>
-	<p>{{ answer3 }}</p>
-
 	<br>
-	<h2> Question 1
+	<h2> {{question}} </h2>
 	<br>
 	<br>
 		<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
@@ -28,9 +23,7 @@
 						 <button type="submit">Nästa</button>
 
 					</form>
-					<p><a href="{% url 'completed_page' quiz_number %}">
-    Nästa
-</a></p>
+				
 
 		</body>
 	</head>
