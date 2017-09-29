@@ -17,7 +17,6 @@
 		<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 	{% csrf_token %}
 						<input class="w3-button w3-black" type="button" value="1" checked> {{answer1}} 
-						<button class="w3-button w3-black">Button Button</button>
 						<br>
 						<input type="w3-button w3-black" name="button" value="2"> {{answer2}} 
 						<br>
