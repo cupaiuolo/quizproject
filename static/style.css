@@ -7,15 +7,10 @@ body {
     color: white;
    margin: auto;
 }
-.header {
-    height:50px;
-    background:#F0F0F0;
-    border:1px solid #CCC;
-    width:960px;
-    margin:0px auto;
-}
+
 
 h1 {
+    font-family: helvetica;
     color: white;
     text-align: center;
 
@@ -28,6 +23,11 @@ p {
     color: white;
     text-align: center;
 	
+}
+
+.center {
+    text-align: center;
+    border: 3px solid green;
 }
 .row {
  text-align: center;	
