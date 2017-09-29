@@ -14,10 +14,6 @@
 	<p>Välkommen till Marinas quiz-sida, vad kan du om Marina?</p>
 	<br>
 	<br>
-		<div class="wrap">
-  		<a href="#" class="button">Hover Me!</a>
-  	
-	</div>
 {% for quiz in quizzes %}
 	<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
 		{{ quiz.name }}
