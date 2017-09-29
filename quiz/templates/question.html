@@ -16,11 +16,11 @@
 	<br>
 		<form action="{% url 'answer_page' quiz.quiz_number question_number %}" method="post">
 	{% csrf_token %}
-						<input class="w3-button w3-black" type="button" value="1" checked> {{answer1}} 
+						<input type="radio" name="answer" value="1" checked> {{answer1}} 
 						<br>
-						<input type="w3-button w3-black" name="button" value="2"> {{answer2}} 
+						<input type="radio" name="answer" value="2"> {{answer2}} 
 						<br>
-						<input type="w3-button w3-black" name="button" value="3"> {{answer3}} 
+						<input type="radio" name="answer" value="3"> {{answer3}} 
 						<br>
 						 <button type="submit">Nästa</button>
 
