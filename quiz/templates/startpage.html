@@ -15,14 +15,14 @@
 	<br>
 	<br>
 		<div class="wrap">
-  		<a href="#" class="button">{% for quiz in quizzes %}
+  		<a href="#" class="button">Hover Me!</a>
+  	
+	</div>
+{% for quiz in quizzes %}
 	<p><a href="{% url 'quiz_page' quiz.quiz_number %}">
 		{{ quiz.name }}
 	</a></p>
-{% endfor %}</a>
-  	
-	</div>
-
+{% endfor %}
 
 	
 	<div class="container">
